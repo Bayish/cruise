@@ -1,0 +1,132 @@
+@media screen and (min-width: 640px) {
+    .catalog-item {
+        width: 50%;
+        max-width: 555px;
+    }
+    
+    .card-img img {
+        height: 260px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .header {
+        padding: 17px 0 207px;
+    }
+    .header-top {
+        display: flex;
+        justify-content: ;
+        vertical-align: top;
+    }
+    .header-right {
+        display:flex;
+        align-items:flex-end;
+        padding-top: 10px;
+    }
+
+    
+    .user-cabinet {
+        font-size: 14px;
+        color: #0d3351;
+        text-decoration: none;
+        background: url(../images/ic-user.png) no-repeat;
+        padding-left:0 7px 0 20px;
+    }
+
+    .user-cabinet::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 6px;
+        right: 0;
+        border-style: solid;
+        border-width: 5px 4px 0 ;
+    }
+
+    .phone-block {
+        margin-left: 20px;
+    }
+
+    .phone {
+        display: block;
+    }
+
+    .header-info h1 {
+        font-size: 26px;
+        margin-top: 7px;
+        word-spacing: 2px;
+        margin-left: 9px;
+    }
+
+    .header-info h1 span {
+        font-size: 72px;
+        word-spacing: 0px;
+        margin: 17px -32px 1px -22px;
+        letter-spacing: 0;
+        transform: scaleX(0.95);
+    }
+
+    .logo {
+        margin-top: 41px;
+        margin-left: 15px;
+    }
+
+    .btn-info {
+        margin: -11px 0 0 13px;
+    }
+
+    .catalog-block h2  {
+        font-size: 26px;
+        margin: 64px 0 54px 15px;
+    }
+
+    .catalog-item {
+        width: 50%;
+        max-width: 720px;
+        padding: 0 -15px;
+    }
+
+    .catalog-card {
+        width: 100%;
+    }
+
+    .card-img {
+        height: 260px;
+        width: auto; 
+    }
+    .card-info {
+        padding: 0px 0 45px 46px;
+    }
+
+    .card-info h5 {
+        margin-top: 17px;
+        padding-right: 15px;
+    }
+
+    .main-btn {
+        max-width: 29%;
+        margin: 2px auto 5px;
+    }
+
+    .footer-inner {
+        width: 100%;
+    }
+
+    .footer-inner{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .footer-left,
+    .footer-nav,
+    .footer-right {
+        width: 28%;
+    }
+
+    .footer-left {
+        display: block;
+    }
+    
+}

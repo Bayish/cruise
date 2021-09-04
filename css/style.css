@@ -1,0 +1,408 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0d3351;
+    background : #f3f3f3;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    padding: 17px 0 208px;
+    background: url(../images/main-pic-sm.jpg) 50% 100% no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    background: url(../images/line.png) 0 0 no-repeat;
+    background-size: 49px;
+    width: 49px;
+    height: 222px;
+    margin: 0 0 -40px -34px;
+}
+
+.btn-nav {
+    position: relative;
+    width: 42px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -10px ;
+    cursor: pointer;
+}
+
+.btn-nav span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -11px;
+}
+
+.btn-nav span,
+.btn-nav span::before,
+.btn-nav span::after{
+    width: 22px;
+    background: #0d3351;
+    height: 2px;
+}
+
+.btn-nav span::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+}
+.btn-nav span::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+}
+
+.main-nav {
+    position: absolute;
+    top: 30px;
+    left:15px;
+    width: 90%;
+    max-width: 420px;
+    overflow: hidden;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 40px 20px 50px 30px;
+    background: #0d3351;
+}
+
+.main-nav li {
+    margin-bottom: 10px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+}
+
+.nav-hidden {
+    height: 0;
+}
+
+.header-right {
+    display: none;
+}
+
+.header-info {
+    text-align: center;
+}
+
+.header-info h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 9px 0 40px 0;
+    letter-spacing: 1px;
+}
+
+.header-info h1 span{
+    display: block;
+    font-size: 50px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-top: 14px;
+    letter-spacing: 0px;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: -27px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.btn-info {
+    display: inline-block;
+    padding: 15px 53px;
+    background: #33c7fd;
+    color: #fff;
+    text-decoration: none;
+}
+
+.catalog-block {
+    padding-bottom: 24px;
+}
+.catalog-block h2 {
+    text-align: center;
+    font-size: 20px;
+    margin: 51px 0 56px;
+    font-family:'Roboto Slab', serif; 
+    font-weight: normal;
+    letter-spacing: 0.9px;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -15px;
+}
+
+.catalog-item {
+    width: 100%;
+    max-width: 480px;
+    padding: 0 15px;
+    margin-bottom: 17px;
+}
+
+.catalog-card {
+    background: #fff;
+    height: 100%;
+}
+
+.card-img {
+    height: 227px;
+    overflow: hidden;
+}
+
+.card-img img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+}
+
+.card-info {
+    padding: 26px 0 45px 23px;
+}
+.card-info h5 {
+    font-size: 18px;
+    color: #00a2dd;
+    font-weight: normal;
+    padding-right: 40px;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+}
+
+.card-info h5 span {
+    position: relative;
+}
+
+.card-info h5 span::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: -25px;
+    border-top: 4px solid transparent;
+    border-left: 7px solid #33c7fd;
+    border-bottom: 4px solid transparent;
+}
+
+.card-info p {
+    margin-top: 7px;
+    line-height: 24px;
+    letter-spacing: 0.85px;
+}
+
+.box-3 p{
+    padding-bottom: 30px;
+}
+
+.card-info .cost {
+    margin-top: 14px;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 1.4px;
+    margin-bottom: 0px;
+}
+
+.card-info del {
+    color: #0d3351;
+    font-size: 18px;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+    position: relative;
+}
+
+.box-1::after,
+.box-2::after,
+.box-3::after {
+    position: absolute;
+    top: -6px;
+    right: 22px;
+    width: 89px;
+    height: 101px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 18px;
+    padding: 27px 10px 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box-1::after {
+    content: "Хит продаж";
+    background: url(../images/box-first-ic.png);
+}
+
+.box-2::after {
+    content: "Акция";
+    background: url(../images/box-second-ic.png); 
+}
+.box-3::after {
+    content: "скидка 10%";
+    background: url(../images/box-third-ic.png);
+}
+
+.main-btn {
+    display: block;
+    font-size: 14px;
+    background: #33c7fd;
+    color: #fff;
+    text-decoration: none;
+    margin:3px auto 0;
+    max-width: 69%;
+    text-align: center;
+    position: relative;
+    padding: 15px 25px 15px 11px ;
+    word-spacing: 2px;
+}
+
+.main-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px ;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #ffffff;
+}
+
+.footer {
+    background: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.footer-left {
+    display: none;
+    text-decoration: none;
+}
+.footer-nav {
+    margin: 5px 1px 1px 1px;
+    text-align: center;
+    vertical-align: center;
+    letter-spacing: 0.9px;
+}
+.footer-nav p {
+    margin-bottom: 9px;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 2px ;
+}
+
+.footer-nav a{
+    display: block;
+    background: #0d3351;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    vertical-align: top;
+}
+
+.ic-vk::after,
+.ic-ok::after,
+.ic-youtube::after,
+.ic-insta::after{
+    content: "";
+    position: absolute;
+}
+
+.ic-vk::after{
+    background: url(../images/vk-ic.png) 0 0 no-repeat; 
+    width: 18px;
+    height: 11px; 
+    top: 10px;
+    left: 7px; 
+}
+
+.ic-ok::after{
+    background: url(../images/ok.png)0 0 no-repeat;
+    width: 10px;
+    height:16px;
+    top: 7px;
+    left: 10px;
+}
+
+.ic-youtube::after{
+    background: url(../images/yt.png)0 0 no-repeat;
+    width:14px;
+    height:18px;
+    top: 6px;
+    left: 9px;
+}
+
+.ic-insta::after{
+    background: url(../images/insta.png)0 0 no-repeat;
+    width:14px;
+    height:14px;
+    top: 8px;
+    left: 8px;
+}
+
+.footer-right {
+    margin-top: 15px;
+}
+
+.footer-right span {
+    margin-top: 4px;
+    display: block;
+    letter-spacing: 0.9px;
+}
+
+.footer-right .main-info {
+    margin-top: 9px;
+}
+
+
+
+
+
+
